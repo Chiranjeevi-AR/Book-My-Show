@@ -723,12 +723,12 @@ The path of prometheus.yml is; cd /etc/prometheus/ ----> ls -l ----> You can see
 
   - job_name: 'node_exporter'
     static_configs:
-      - targets: ['<MonitoringVMip>:9100']
+      - targets: ['44.222.208.158:9100']
 
   - job_name: 'jenkins'
     metrics_path: '/prometheus'
     static_configs:
-      - targets: ['<your-jenkins-ip>:<your-jenkins-port>']
+      - targets: ['107.21.65.196:8080']
 
 
 
@@ -816,4 +816,5 @@ Click on Dashboards in the left pane, you can see both the dashboards you have j
 
 
 Final:
+
 Delete all the resources created
